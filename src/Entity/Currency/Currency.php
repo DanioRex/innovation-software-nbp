@@ -12,7 +12,7 @@ use PrinsFrank\Standards\Currency\CurrencyAlpha3;
 use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: CurrencyRepository::class)]
-final class Currency extends AbstractBaseEntity
+class Currency extends AbstractBaseEntity
 {
     #[Assert\NotBlank]
     #[Assert\Length(max: 255)]
