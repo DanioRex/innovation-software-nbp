@@ -29,3 +29,8 @@ services:
             - { name: doctrine.event_listener, event: 'prePersist' }
             - { name: doctrine.event_listener, event: 'onFlush' }
             - { name: doctrine.event_listener, event: 'loadClassMetadata' }
+
+    nbp.current_exchange_rate_table_a_client:
+        class: App\Service\NbpApi\Client\CurrentExchangeRateTable\CurrentExchangeRateTableAClient
+
+    'App\Service\NbpApi\Client\CurrentExchangeRateTable\CurrentExchangeRateTableClientInterface $tableAClient': '@nbp.current_exchange_rate_table_a_client'

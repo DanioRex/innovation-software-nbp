@@ -9,6 +9,13 @@ framework:
     #esi: true
     #fragments: true
 
+    http_client:
+        scoped_clients:
+            nbpApiClient:
+                base_uri: 'http://api.nbp.pl/'
+                headers:
+                    Accept: 'application/json'
+
 when@test:
     framework:
         test: true
