@@ -15,7 +15,6 @@ final readonly class ExchangeRateTableADTO extends AbstractExchangeRateTableDTO
             constraints: [
                 new Assert\Type(ExchangeRateADTO::class),
             ],
-            groups: [NbpApiTableTypeEnum::A->value],
         )]
         #[Assert\Valid]
         /** @var ExchangeRateADTO[] $rates */

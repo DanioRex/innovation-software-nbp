@@ -19,6 +19,7 @@
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^2.18.0",
         "gedmo/doctrine-extensions": "^3.15",
+        "phpdocumentor/reflection-docblock": "^5.3",
         "prinsfrank/standards": "^3.8",
         "ramsey/uuid-doctrine": "^2.0",
         "symfony/console": "7.0.*",
