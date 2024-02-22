@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace App\Tests\Unit\Service\Currency\Builder;
+
 use App\Entity\Currency\Currency;
 use App\Exception\ValidationException;
 use App\Service\Currency\Builder\CurrencyBuilder;
