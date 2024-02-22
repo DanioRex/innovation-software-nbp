@@ -17,3 +17,6 @@ reset-db: migrate fixtures ## Reset the database
 
 test: ## Run PHPUnit Tests
 	@docker-compose exec app ./vendor/bin/phpunit
+
+update-currencies-a:
+	@docker-compose exec app bin/console app:currency:update:nbp A
