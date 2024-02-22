@@ -34,3 +34,8 @@ services:
         class: App\Service\NbpApi\Client\CurrentExchangeRateTable\CurrentExchangeRateTableAClient
 
     'App\Service\NbpApi\Client\CurrentExchangeRateTable\CurrentExchangeRateTableClientInterface $tableAClient': '@nbp.current_exchange_rate_table_a_client'
+
+    app.currency.nbp_a_updater:
+        class: App\Service\Currency\Updater\Nbp\Updater\CurrencyNbpAUpdater
+
+    'App\Service\Currency\Updater\Nbp\Updater\CurrencyNbpUpdaterInterface $updaterA': '@app.currency.nbp_a_updater'
