@@ -9,7 +9,7 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use PrinsFrank\Standards\Currency\CurrencyAlpha3;
 
-final class CurrencyRepository extends ServiceEntityRepository
+class CurrencyRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
